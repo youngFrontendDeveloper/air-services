@@ -8,25 +8,26 @@ export const Summary = ({ services }: Props) => {
   const total = services.reduce((sum, item) => sum + item.price, 0);
 
   return (
-    <section>
+    <div className="summary">
       {services.length > 0 ? (
         <>
-          <h2>Итого:</h2>
-          <ul>
+          <h2 className="summary__title">Итого:</h2>
+          <ul className="summary__list">
             {services.map((service) => (
-              <li key={service.id}>
+              <li key={service.id} className="summary__item">
                 {service.title} — {service.price} ₽
               </li>
             ))}
-          </ul>
-          <div>
-            <strong>Сумма: {total} ₽</strong>
-          </div>
-          <button>Оформить заказ</button>
+          </ul>         
+            <p className="summary__total">
+              Общая сумма: <span className="summary__total-price">{total}&nbsp;₽</span>
+            </p>
+         
+          <button type="button" className="summary__button">Оформить заказ</button>
         </>
       ) : (
         <p>Дополнительные услуги не выбраны</p>
       )}
-    </section>
+    </div>
   );
 };

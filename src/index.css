@@ -85,10 +85,12 @@ body {
 }
 
 .service__button {
-  padding: 5px 15px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 16px;
   color: #ffffff;
   background-color: rgba(86, 4, 61, 0.693);
-  border: 1px solid #05744d;
+  border: 1px solid #310224;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
@@ -96,5 +98,78 @@ body {
 
 .service__button:hover {
   background-color: rgba(86, 4, 61, 0.887);
+  transform: scale(0.98);
+}
+
+.service__button:disabled:hover {
+  transform: scale(1);
+}
+
+.summary {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.summary__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.summary__list {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.summary__item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.summary__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '\2713';
+  display: block;
+  width: 15px;
+  height: auto;
+}
+
+.summary__total {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.summary__total-price {
+  font-weight: 700;
+  color: #310224;
+}
+
+.summary__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #1d1f1f;
+  background-color: rgba(43, 159, 68, 0.59);
+  /* background-color: rgba(86, 4, 61, 0.693);
+  border: 1px solid #310224; */
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.summary__button:hover {
+  color: #e5ecec;
+  background-color: rgba(14, 95, 32, 0.808);
   transform: scale(0.98);
 }

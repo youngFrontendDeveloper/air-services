@@ -25,7 +25,13 @@ export const ServiceItem = ({ service, onAdd }: Props) => {
         <div className="service__title">{service.title}</div>
         <strong className="service__price">{service.price}&nbsp;₽</strong>
       </div>
-      <button className="service__button" onClick={addService} type="button" style={styleButton}>
+      <button
+        className="service__button"
+        onClick={addService}
+        type="button"
+        style={styleButton}
+        disabled={isAdded}
+      >
         {buttonText}
       </button>
     </div>
