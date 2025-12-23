@@ -5,13 +5,13 @@ Air Services - Дополнительные услуги для авиапасс
 ### Установка
 
 ```bash
-# Клонировать репозиторий
+ Клонировать репозиторий
 git clone https://github.com/youngFrontendDeveloper/air-services.git
 cd air-services
 
-# Установить зависимости
+ Установить зависимости
 npm install
-# или
+ или
 yarn install
 ```
 
@@ -19,7 +19,7 @@ yarn install
 
 ```bash
 npm run dev
-# или
+ или
 yarn dev
 ```
 
@@ -29,7 +29,7 @@ yarn dev
 
 ```bash
 npm run build
-# или
+ или
 yarn build
 ```
 
@@ -39,7 +39,7 @@ yarn build
 
 ```bash
 npm run preview
-# или
+ или
 yarn preview
 ```
 
@@ -47,12 +47,12 @@ yarn preview
 
 ```
 
-## Возможности
+ Возможности
 
-### Управление услугами
+ Управление услугами
 - Просмотр категорий дополнительных услуг
 - Добавление услуг из заказа
 - Расчет общей стоимости
 
-### Пользовательский интерфейс
+ Пользовательский интерфейс
 - Адаптивный дизайн (Mobile-first)
